@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+html(lang="en")
+	include view/layout/head.pug
+	body
+		include view/layout/header.pug
+		main.main
+			include view/components/intro.pug
+			section.presentation
+				include view/components/content.pug
+			section.connection
+				include view/components/connect.pug
+			section.user
+				include view/components/user.pug
+			section.last
+				include view/components/last.pug
+		footer.footer
+			include view/layout/footer.pug
+		
+		script(src="scripts/comon.min.js")

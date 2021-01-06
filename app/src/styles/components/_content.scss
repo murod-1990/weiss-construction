@@ -1,0 +1,91 @@
+.present {
+
+
+  &__title {
+    color: #263640;
+    font-size: 24px;
+    line-height: 44px;
+    font-family: $nunito;
+    font-weight: bold;
+    width: 100%;
+    max-width: max-content;
+
+  }
+
+  &__text {
+    color: #929A9F;
+    font-size: 16px;
+    line-height: 28px;
+    font-family: $nunito;
+    font-weight: normal;
+    width: 100%;
+    max-width: 520px;
+  }
+
+  &__catalog {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(605px, max-content);
+    grid-gap: 100px;
+
+    @include media($xl) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 50px;
+    }
+
+    @include media($md) {
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+      text-align: center;
+    }
+
+    .present__info {
+
+
+      &-img {
+        object-fit: cover;
+      }
+
+      &-title {
+        color: #263640;
+        line-height: 30px;
+        font-size: 20px;
+        font-family: $nunito;
+        font-weight: 500;
+        width: 90%;
+      }
+
+      &-text {
+        line-height: 28px;
+        font-size: 16px;
+        color: #929A9F;
+        font-family: $nunito;
+        font-weight: 400;
+        margin-top: 24px;
+        margin-bottom: 24px;
+        width: 90%;
+      }
+
+      & a {
+        text-decoration: none;
+
+        .present__info-link {
+          border: none;
+          outline: none;
+          background: transparent;
+          color: $orange;
+          font-weight: 500;
+          font-size: 16px;
+
+          &::after {
+            content: '\f054';
+            margin-left: 20px;
+            font-size: 16px;
+          }
+        }
+      }
+
+    }
+  }
+}

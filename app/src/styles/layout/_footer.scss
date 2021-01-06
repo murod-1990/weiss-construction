@@ -1,0 +1,135 @@
+.foot {
+  background: #263640;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    @include media($sm){
+      flex-direction: column;
+    
+    }
+
+    &-logo {
+      &-logo {
+        font-size: 40px;
+        color: white;
+        font-family: $nunito;
+        font-weight: bold;
+        text-decoration: none;
+        position: relative;
+        text-transform: uppercase;
+        margin-right: 20px;
+
+        &::before {
+          content: '';
+          height: 3px;
+          width: 25px;
+          background: white;
+          position: absolute;
+          top: 0%;
+          right: -10%;
+        }
+        
+        &::after {
+          content: '';
+          height: 25px;
+          width: 3px;
+          background: white;
+          position: absolute;
+          top: 0%;
+          right: -10%;
+        }
+      }
+
+    }
+
+    .foot__col {
+      display: flex;
+      padding-top: 64px;
+      padding-bottom: 64px;
+
+      @include media($sm){
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .foot__content-info {
+        margin-right: 144px;
+        @include media($lg){
+          margin-left: 50px;
+          margin-bottom: 20px;
+        }
+        
+        
+        &__title {
+          color: white;
+          font-size: 14px;
+          text-transform: uppercase;
+          font-family: $nunito;
+          font-weight: normal;
+          letter-spacing: 1.75px;
+
+        }
+
+        &__text {
+          color: white;
+          font-size: 16px;
+          line-height: 26px;
+          font-family: $nunito;
+          font-weight: normal;
+        }
+      }
+
+      .foot__content-adress {
+        &__title {
+          color: white;
+          font-size: 14px;
+          text-transform: uppercase;
+          font-family: $nunito;
+          font-weight: normal;
+          letter-spacing: 1.75px;
+        }
+
+        &__text {
+          color: white;
+          font-size: 16px;
+          line-height: 26px;
+          font-family: $nunito;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+
+  &__line {
+    padding-bottom: 40px;
+    &-liner {
+      width: 100%;
+      height: 1px;
+      opacity: 0.2;
+      background: white;
+      margin-bottom: 40px;
+    }
+
+    &-span {
+      font-size: 14px;
+      font-family: $nunito;
+      color: white;
+      opacity: 0.2;
+      margin-right: 8px;
+    }
+
+    &-span2 {
+      font-size: 14px;
+      font-family: $nunito;
+      color: white;
+      opacity: 0.2;
+      padding-left: 8px;
+      border-left: solid 1px white;
+
+    }
+  }
+
+}

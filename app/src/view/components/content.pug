@@ -1,0 +1,11 @@
+section.present.container
+  h4.present__title Unsere Dienstleistungen
+  p.present__text Dienstleistung ist für unsere Mitarbeiter Herausforderung, das ist die Stärke unseres Teams. Ganz gleich, ob Verkehrsplanungen, Ver- und Ent­sorgung, Lärmschutz oder Spezialgebiete – wir bieten Rundum-Service mit:
+  .present__catalog
+    each item in [{num: 1, title: 'Studien und Konzepte, Gesamtplanung', text: 'Neubau und Ausbau von Straßen, Verkehrsflächen, Wasserwegen und Eisenbahnen erfordert überzeugende Verkehrskonzepte.', link: 'Erfahren Sie mehr'},{num: 2, title: 'Verkehrsanlagen und Ingenieurbauwerke', text: 'Verkehrskonzepte sind ein entscheidender Faktor jeglicher Infrastruktur. Das Ingenieurbüro Weiss hat deshalb ein Expertenteam aufgebaut.', link: 'Erfahren Sie mehr'},{num: 3, title: 'Entwurfsvermessung, 3D-Laserscanning', text: 'Bei Ausführung sämtlicher vermessungstechnischer Aufgaben im Leistungsbild „Ent­wurfs­vermessung“ sind wir ein leistungsstarker Partner.', link: 'Erfahren Sie mehr'}]
+      .present__info
+        img(src="images/Image" + item.num + ".webp", alt=item.title).present__info-img
+        h4.present__info-title= item.title
+        p.present__info-text= item.text
+        a(href="#!")
+          button.fal.present__info-link= item.link

@@ -1,0 +1,13 @@
+.block.container
+  .block__user.container
+    .block__content
+      h3.block__content-title Wissenswertes
+      p.block__content-text Integer massa urna, senectus maecenas in dapibus urna amet hendrerit. In ipsum, morbi amet aenean. Iaculis donec sem nullam nunc condimentum nisl non gravida in. 
+    button.fal.block__user-btn Unser Blog
+    h5.block__user-firm Unsere Letzten Beiträge
+  .block__grid.container
+    each el in [{title: 'Sed eget morbi cursus elit ipsum pellentesque', text: 'Pellentesque mauris arcu nec gravida amet nec. Duis senectus cras semper cursus bibendum phasellus vehicula porttitor...', link: 'Lesen Sie weiter'},{title: 'Urna velit semper faucibus ac suspendisse et', text: 'In nibh sodales tincidunt vitae tortor. Turpis aliquam mattis eget cursus bibendum interdum vestibulum, aliquam. Fringilla malesuada...', link: 'Lesen Sie weiter'},{title: 'Bibendum augue imperdiet sapien quis enim elementum', text: 'Facilisi id mus at pulvinar vitae, ornare vitae scelerisque. Lacus egestas augue cursus aliquam nulla. Sed erat a scelerisque neque...', link: 'Lesen Sie weiter'}]
+      .block__info
+        h4.block__info-title= el.title
+        p.block__info-text= el.text
+        button.fal.block__info-btn= el.link

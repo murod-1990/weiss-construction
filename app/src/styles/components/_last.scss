@@ -1,0 +1,155 @@
+.build {
+  margin-top: 323px;
+  background: #F5F8FA;
+
+  @include media($md) {
+    margin-top: 50px;
+  }
+
+  &__info {
+    max-height: 477px;
+    padding-bottom: 116px;
+    padding-top: 100px;
+    position: relative;
+
+    .build__btn {
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 30px;
+      border: none;
+      outline: none;
+      background: rgba(255, 255, 255, 0.5);
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      transition: 0.5s linear;
+      position: absolute;
+      bottom: 50%;
+      right: 50%;
+
+      @include media($lg) {
+        top: 25%;
+        right: 25%;
+      }
+
+      @include media($sm) {
+        top: 15%;
+        right: 15%;
+      }
+
+      &:hover {
+        transform: scale(1.5);
+        transition: 0.5s linear;
+      }
+
+      &::after {
+        content: '\f06e';
+      }
+
+
+    }
+
+    .build__content {
+      &-firm {
+        color: #929A9F;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-family: $nunito;
+        font-weight: bold;
+        margin-bottom: 16px;
+      }
+
+      &-title {
+        color: #263640;
+        font-size: 32px;
+        font-family: $nunito;
+        font-weight: bold;
+        margin-bottom: 24px;
+      }
+
+      &-text {
+        color: #929A9F;
+        font-size: 16px;
+        line-height: 28px;
+        font-family: $nunito;
+        font-weight: 500;
+        max-width: 310px;
+        width: 100%;
+      }
+
+      &-button {
+        background: $orange;
+        border: none;
+        outline: none;
+        width: 135px;
+        height: 40px;
+        color: white;
+        font-size: 16px;
+        margin-top: 32px;
+
+        &::after {
+          content: '\f054';
+          margin-left: 20px;
+        }
+      }
+    }
+
+    .build__img {
+      position: absolute;
+      top: -123px;
+      right: 0%;
+
+      @include media($xl) {
+        display: none;
+      }
+
+      &.look {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0%;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blure(10px);
+        z-index: 5;
+      }
+
+
+      &-btn {
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 30px;
+        border: none;
+        outline: none;
+        background: rgba(255, 255, 255, 0.5);
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        position: absolute;
+        transition: 0.5s linear;
+        top: 2%;
+        right: 5%;
+        display: none;
+
+        &.close {
+          display: block;
+        }
+
+
+        &:hover {
+          transform: scale(1.5);
+          transition: 0.5s linear;
+        }
+
+
+        &::after {
+          content: '\f00d';
+        }
+      }
+    }
+  }
+
+
+
+
+}

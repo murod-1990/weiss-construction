@@ -1,0 +1,21 @@
+@import 'layout/config',
+'layout/font',
+'layout/header',
+'components/intro',
+'components/content.scss',
+'components/_connect.scss',
+'components/_user.scss',
+'components/_last.scss',
+'layout/_footer.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.presentation {
+  background: #F5F8FA;
+  padding-top: 20px;
+}
